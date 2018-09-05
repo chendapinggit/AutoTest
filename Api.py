@@ -3,6 +3,10 @@
 import requests,json,unittest
 
 class TestStringMethods(unittest.TestCase):
+    def setUp(self):
+        print ('fixture setup')
+    def tearDown(self):
+         print('fixtrre tearDown')
     def test_upper(self):
         """
         测试是否大小写正常
